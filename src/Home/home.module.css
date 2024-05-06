@@ -1,0 +1,69 @@
+.sectionOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+    background-image: url(../images/sectionOneBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    .HomeDiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1436px;
+    }
+        .theBest{
+            background: #79c8e8;
+            color: #fff;
+            padding: 6px 10px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            border-radius: 5px;
+            width: 90%;
+            text-align: center;
+            max-width: 330px;
+        }
+        .OurCourses{
+            font-size: 5.6em;
+            font-weight: 900;
+            color: #12265a;
+        }
+        .textLorem{
+            color: #6c757d;
+            line-height: 2.5em !important;
+        }
+        .ReadMore{
+            background: #ffc85b;
+            width: 80%;
+            max-width: 350px;
+            border-radius: 35px;
+            color: #fff;
+            font-size: 1.4em;
+            font-weight: 900;
+            padding: 15px 0;
+            margin-top: 35px;
+            cursor: pointer;
+            transition: .4s all ease;
+        }
+            .ReadMore:hover{
+                background: #007bff;
+            }
+
+@media screen and (max-width: 760px){
+    .sectionOne{
+        margin-top: 150px;
+        padding: 0px 10px;
+        background-position: -200px;
+    }
+        .OurCourses{
+            font-size: 3em;
+        }
+        .ReadMore{
+            font-size: 1em;
+        }
+}
+
+/* second section */
+

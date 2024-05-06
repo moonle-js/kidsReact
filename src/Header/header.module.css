@@ -11,6 +11,7 @@
     text-decoration: none;
 }
 
+
 header{
     width: 96%;
     max-width: 1436px;
@@ -188,3 +189,71 @@ header{
                             z-index: -1;
                             border-radius: 50%;
                         }
+
+
+@media screen and (max-width: 760px){
+    *{
+        font-size: 16px;
+    }
+    img{
+        transform: scale(.7);
+    }
+    header{
+        margin: 0;
+        width: 100%;
+        background: #313131;
+        margin-top: 0;
+    }
+    nav{
+        position: relative;
+    }
+    .logoLink a p span:nth-child(1){
+        color: #fff;
+    }
+    .navLinks{
+        position: absolute;
+        width: 100%;
+    }
+    .navLinks *{
+        justify-content: flex-start !important;
+    }
+        .SecondUl{
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            top: 10vh;
+            background: #313131;
+            width: 100% !important;
+            min-height: 150px;
+        }
+            .SecondUl li{
+                padding-left: 10px;
+                width: 100% !important;
+                display: flex;
+                margin: 5px 0;
+            }
+            .SecondUl a{
+                color: #fff !important;
+            }
+
+        .logoLink{
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+        }
+            .logoLink  a{
+                justify-content: center;
+                align-items: center;
+            }
+        .cardList{
+            width: 40%;
+        }
+            .card i{
+                width: 20px;
+                height: 20px;
+            }
+            .card span{
+                width: 45px;
+                height: 45px;
+            }
+}

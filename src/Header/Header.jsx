@@ -2,14 +2,11 @@ import style from './header.module.css'
 import elephant from '../images/elephantIcon.png'
 
 export default function Header(){
-    for(let i = 0; i < 361; i+=36){
-        console.log(i)
-    }
     return(
         <>
             <header>
                 <nav>
-                    <ul>
+                    <ul className={style.mainUl}>
                         <li className={style.logoLink}>
                             <a href='/'>
                                 <img className={style.logo} src={elephant}></img>
@@ -21,7 +18,7 @@ export default function Header(){
                         </li>
 
                         <li className={style.navLinks}>
-                            <ul>
+                            <ul className={style.SecondUl}>
                                 <li>
                                     <a href='/'>
                                         Home
@@ -50,7 +47,7 @@ export default function Header(){
 
                         <li className={style.cardList}>
                             <a className={style.card} href='/card'>
-                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i className="fa-solid fa-cart-shopping"></i>
                                 <span></span>
                             </a>
                         </li>

@@ -5,6 +5,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App/App";
 import Demo from "./Demo/Demo";
 import Card from "./Card/Card";
+import Home from "./Home/Home";
 
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
         element: <App></App>,
         children: [
             {
-                path: 'demo',
+                index: true,
+                element: <Home></Home>
+            },
+            {
+                path: "Demo",
                 element: <Demo></Demo>
             },
             {

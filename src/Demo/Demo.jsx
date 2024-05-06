@@ -1,7 +1,7 @@
 export default function Demo(){
     return(
         <>
-            <h1>Salam</h1>
+            <h1>Demo</h1>
         </>
     )
 }
