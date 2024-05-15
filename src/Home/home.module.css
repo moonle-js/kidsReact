@@ -1,8 +1,10 @@
 .sectionOne{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 10vh;
     min-height: 70vh;
     background-image: url(../images/sectionOneBG.jpg);
     background-size: cover;
@@ -50,6 +52,15 @@
             .ReadMore:hover{
                 background: #007bff;
             }
+    .sec_1_bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        fill: #fff;
+    }
+
 
 @media screen and (max-width: 760px){
     .sectionOne{
@@ -67,3 +78,103 @@
 
 /* second section */
 
+.secondSection{
+    width: 100%;
+    height: 60vh;
+    background-color: #f2f6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
+    .secondSection .leftSide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        max-width: 992px;
+        height: 80%;
+        border-radius: 25px;
+        position: relative;
+        z-index: 2;
+    }
+        .secondSection .leftSide .block{
+            width: 100%;
+            background: url(../images/secondSectionchildren.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            z-index: 2;
+            border-radius: 25px;
+        }
+        .secondSection .leftSide .leftSidePre{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+
+            border: 3px dashed #fa9db7;
+            display: inline-block;
+            border-radius: 25px;
+        }
+
+        .secondSection .rightSide{
+            display: flex;
+            flex-direction: column;
+            height: 80%;
+            width: 40%;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 50px;
+        }
+            .secondSection .rightSide h2{
+                display: flex;
+                position: relative;
+                width: auto;
+                color: #12265a;
+                font-weight: 900;
+                font-size: 46px;
+                background-image: linear-gradient(to top, rgba(250, 157, 183, 0.5), rgba(250, 157, 183, 0.5));
+                background-repeat: no-repeat;
+                background-position: 0% 74%;
+                padding: 10px;
+                background-size: 100% 40%
+            }
+            .secondSection .rightSide p{
+                display: flex;
+                position: relative;
+                width: auto;
+                color: #12265a;
+                font-weight: 900;
+                padding: 10px;
+                font-size: 46px;
+                background-image: linear-gradient(to top, rgba(255, 200, 91, 0.5), rgba(255, 200, 91, 0.5));
+                background-repeat: no-repeat;
+                background-position: 0% 74%;
+                background-size: 100% 50%
+            }
+            .secondSection .rightSide button{
+                width: 90%;
+                max-width: 170px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #ffc85b;
+                font-size: 16px;
+                font-weight: 800;
+                cursor: pointer;
+                height: 55px;
+                border-radius: 25px;
+            }
+                .secondSection .rightSide button a{
+                    color: #fff;
+                    width: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 80%;
+                    border: 3px dashed #fff;
+                    border-radius: 25px;
+                }
+                
