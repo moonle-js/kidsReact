@@ -1,5 +1,7 @@
 import style from "./home.module.css"
 import secondSectionBack from "../images/secondSectionchildren.jpg"
+import CardsSection from "./CardsSection/CardsSection"
+import SchoolEducationalSection from "./SchoolEducationalSection/SchoolEducationalSection"
 
 export default function Home(){
     return(
@@ -52,6 +54,9 @@ export default function Home(){
                     </button>
                 </div>
             </section>
+
+            <CardsSection></CardsSection>
+            <SchoolEducationalSection></SchoolEducationalSection>
         </>
     )
 }
